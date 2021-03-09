@@ -1,23 +1,27 @@
 import random
 
 answer=random.randint(1,30)
-str(answer)
-print(answer)
-num=''
-while answer!=num:
+while(True):
+    number=input()
 
-    num = str(input())
-
-    if(num=='quit'):
+    if number=='quit':
         print('quit')
-        quit(0)
+        break
 
+    try:
+        number=int(number)
 
-    if int(num)>int(answer):
-        print('big')
-    elif int(num)<int(answer):
-        print('small')
-    elif int(num)==int(answer):
-        print('end')
-        quit(0)
+    except ValueError:
+        print('wrong input')
+        continue
 
+    if int(number)>answer:
+        print('bigger')
+        continue
+
+    elif int(number)<answer:
+        print('smaller')
+        continue
+    else:
+        print('correct')
+        break
