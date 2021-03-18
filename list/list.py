@@ -120,4 +120,3 @@ import random
 # new_value=[v if v!=0 else 'zero' for v in value]
 # print(new_value)
 
-
