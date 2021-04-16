@@ -1,0 +1,6 @@
+  File "D:\Script_Language\Debugging\Debugging.py", line 23, in <module>
+    spam()
+  File "D:\Script_Language\Debugging\Debugging.py", line 21, in spam
+    bacon()
+  File "D:\Script_Language\Debugging\Debugging.py", line 16, in bacon
+    for l in traceback.format_stack():
